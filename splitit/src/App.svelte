@@ -1,8 +1,8 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import Navbar from './components/Navbar.svelte';
-  import BillManager from './components/BillManager.svelte';
-  import { darkMode } from './stores';
+  import Navbar from './lib/components/Navbar.svelte';
+  import BillManager from './lib/components/BillManager.svelte';
+  import { darkMode } from './stores/store';
 
   onMount(() => {
     const savedTheme = localStorage.getItem('theme');
